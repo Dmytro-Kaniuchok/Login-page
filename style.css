@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
 * {
   margin: 0;
@@ -8,31 +8,37 @@
 }
 
 body {
-  background: linear-gradient(135deg, #020024, #001f1f, #003300);
+  background: linear-gradient(135deg, #f0fff9, #e5f9f3, #ffffff);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  color: #e0ffe0;
+  color: #1b3b32;
   overflow: hidden;
 }
 
 h1 {
-  color: #00ff99;
-  text-shadow: 0 0 12px rgba(0, 255, 150, 0.4);
+  color: #00a676;
+  text-shadow: 0 0 10px rgba(0, 166, 118, 0.15);
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 32px;
+  text-shadow: 0 0 10px rgba(0, 166, 118, 0.15);
 }
 
 .container {
-  background: rgba(10, 20, 15, 0.9);
+  background: #ffffff;
   border-radius: 30px;
-  box-shadow: 0 0 25px rgba(0, 255, 100, 0.15);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
   position: relative;
   overflow: hidden;
   width: 768px;
   max-width: 100%;
   min-height: 480px;
-  border: 1px solid rgba(0, 255, 150, 0.2);
+  border: 1px solid #d9f3e8;
 }
 
 .container p {
@@ -40,16 +46,16 @@ h1 {
   line-height: 20px;
   letter-spacing: 0.3px;
   margin: 20px 0;
-  color: #b8f8b8;
+  color: #4a7863;
 }
 
 .container span {
   font-size: 12px;
-  color: #88c088;
+  color: #6bbf95;
 }
 
 .container a {
-  color: #00ff99;
+  color: #00a676;
   font-size: 13px;
   text-decoration: none;
   margin: 15px 0 10px;
@@ -57,12 +63,12 @@ h1 {
 }
 
 .container a:hover {
-  color: #66ffaa;
+  color: #00c78c;
 }
 
 .container button {
-  background: linear-gradient(135deg, #00ff88, #007a33);
-  color: #001f1f;
+  background: linear-gradient(135deg, #00c78c, #00a676);
+  color: white;
   font-size: 12px;
   padding: 12px 40px;
   border: none;
@@ -73,27 +79,26 @@ h1 {
   margin-top: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 12px rgba(0, 255, 100, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 166, 118, 0.3);
 }
 
 .container button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 255, 100, 0.6);
+  box-shadow: 0 6px 16px rgba(0, 166, 118, 0.4);
 }
 
 .container button.hidden {
   background-color: transparent;
-  border: 1px solid #00ff88;
-  color: #00ff88;
+  border: 1px solid #00a676;
+  color: #fff;
 }
 
 .container button.hidden:hover {
-  background-color: #00ff88;
-  color: #001f1f;
+  background-color: #00a676;
 }
 
 .container form {
-  background-color: rgba(10, 25, 15, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
@@ -104,9 +109,9 @@ h1 {
 }
 
 .container input {
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(0, 255, 100, 0.2);
-  color: #c8ffc8;
+  background-color: #f4fffa;
+  border: 1px solid #b3e5d6;
+  color: #1b3b32;
   margin: 8px 0;
   padding: 10px 15px;
   font-size: 13px;
@@ -117,12 +122,12 @@ h1 {
 }
 
 .container input::placeholder {
-  color: #7affb2;
+  color: #82c8aa;
 }
 
 .container input:focus {
-  border-color: #00ff88;
-  box-shadow: 0 0 10px rgba(0, 255, 100, 0.4);
+  border-color: #00a676;
+  box-shadow: 0 0 10px rgba(0, 166, 118, 0.2);
 }
 
 .form-container {
@@ -174,7 +179,7 @@ h1 {
 }
 
 .social-icons a {
-  border: 1px solid rgba(0, 255, 100, 0.2);
+  border: 1px solid #b3e5d6;
   border-radius: 20%;
   display: inline-flex;
   justify-content: center;
@@ -182,13 +187,13 @@ h1 {
   margin: 0 3px;
   width: 40px;
   height: 40px;
-  color: #00ff99;
+  color: #00a676;
   transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-  background-color: rgba(0, 255, 100, 0.15);
-  box-shadow: 0 0 10px rgba(0, 255, 100, 0.4);
+  background-color: #e8fff6;
+  box-shadow: 0 0 10px rgba(0, 166, 118, 0.25);
   transform: scale(1.1);
 }
 
@@ -210,9 +215,9 @@ h1 {
 }
 
 .toggle {
-  background: linear-gradient(135deg, #007a33, #004d26, #00ff66);
+  background: linear-gradient(135deg, #00c78c, #00a676, #b2f7e0);
   height: 100%;
-  color: #e0ffe0;
+  color: #ffffff;
   position: relative;
   left: -100%;
   width: 200%;
